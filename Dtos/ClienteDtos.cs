@@ -24,6 +24,13 @@ namespace GestionBilioteca.Dtos
         DateTime fchaInicioSuspensión = new DateTime(9999, 12, 31);
         DateTime fechaFinSuspensión = new DateTime(9999, 12, 31);
 
+        override
+
+        public string ToString()
+        {
+            string cl = $"id Biblioteca: {idBiblioteca}; nombre completo : {nombreCompletoCliente}; fecha nacimiento : {fchaNacimientoCliente}; dni: {dniCompletoCliente}; correo: {correoCliente}";
+            return cl ;
+        }
 
         public ClienteDtos()
         {

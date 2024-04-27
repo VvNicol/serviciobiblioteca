@@ -1,4 +1,5 @@
-﻿using GestionBilioteca.Dtos;
+﻿using GestionBilioteca.Controlador;
+using GestionBilioteca.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,72 +10,85 @@ namespace GestionBilioteca.Utilidades
 {
     internal class Utils
     {
-        public static long calcularId(List<BibliotecaDto> listaB)
+        public static long calcularId()
         {
-            long idCalcular;
-            int tamanioLista = listaB.Count;
+            try
+            {
+                long idCalcular;
+                int tamanioLista = Program.listaBibliotecas.Count();
 
-            if (tamanioLista > 0)
-            {
-                idCalcular = listaB.Count() + 1;
-            }else
-            {
-                idCalcular = 1;
-            }
-            return idCalcular;
+                if (tamanioLista > 0)
+                {
+                    idCalcular = Program.listaBibliotecas.Count() + 1;
+                }else
+                {
+                    idCalcular = 1;
+                }
+                return idCalcular;
+            } catch (Exception ) { throw; }
         }
 
-        public static long calcularIdCliente(List<ClienteDtos> listaC)
+        public static long calcularIdCliente()
         {
-            long idCalcular;
-            int tamanioLista = listaC.Count;
+            try { 
+                long idCalcular;
+                int tamanioLista = Program.listaClientes.Count();
 
-            if (tamanioLista > 0)
-            {
-                idCalcular = listaC.Count() + 1;
-            }
-            else
-            {
-                idCalcular = 1;
-            }
-            return idCalcular;
+                if (tamanioLista > 0)
+                {
+                    idCalcular = Program.listaClientes.Count() + 1;
+                }
+                else
+                {
+                    idCalcular = 1;
+                }
+                return idCalcular;
+            }  catch (Exception ) { throw; }
         }
-        public static long calcularIdLibro(List<LibroDtos> listaL)
+        public static long calcularIdLibro()
         {
-            long idCalcular;
-            int tamanioLista = listaL.Count;
-
-            if (tamanioLista > 0)
+            try
             {
-                idCalcular = listaL.Count() + 1;
-            }
-            else
-            {
-                idCalcular = 1;
-            }
-            return idCalcular;
-        }
+                long idCalcular;
+                int tamanioLista = Program.listaLibro.Count();
 
-        public static void mostrarBibliotecas(List<BibliotecaDto> listaBiblioteca)
-        {            
-            Console.WriteLine("Bibliotecas: ");
-            Console.WriteLine("------------");
+                if (tamanioLista > 0)
+                {
+                    idCalcular = Program.listaLibro.Count() + 1;
+                }
+                else
+                {
+                    idCalcular = 1;
+                }
+                return idCalcular;
 
-            foreach (BibliotecaDto bibli in listaBiblioteca)
-            {
-                Console.WriteLine(bibli.ToString());
-            }
+            }catch (Exception ) { throw; }
         }
 
-        public static void mostrarClientes(List<ClienteDtos> listaClientes)
+        public static void mostrarBibliotecas()
         {
-            Console.WriteLine("Clientes: ");
-            Console.WriteLine("------------");
+            try { 
+                Console.WriteLine("Bibliotecas: ");
+                Console.WriteLine("------------");
 
-            foreach (ClienteDtos cliente in listaClientes)
-            {
-                Console.WriteLine(cliente.ToString());
-            }
+                foreach (BibliotecaDto bibli in Program.listaBibliotecas)
+                {
+                    Console.WriteLine(bibli.ToString());
+                }
+            } catch(Exception ) { throw; }
+        }
+
+        public static void mostrarClientes()
+        {
+            try { 
+                Console.WriteLine("Clientes: ");
+                Console.WriteLine("------------");
+
+                foreach (ClienteDtos cliente in Program.listaClientes)
+                {
+                    Console.WriteLine(cliente.ToString());
+                }
+            } catch(Exception ) { throw; }
         }
 
     }
