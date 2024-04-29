@@ -1,0 +1,11 @@
+1;Mayonesa;cc salsa
+1;Mayonesa;cc salsa
+1;Mayonesa;cc salsa
+1;Mayonesa;cc salsa
+3;tomate;cc ketchup
+1;Mayonesa;cc salsa
+1;Mayonesa;cc salsa
+1;Mayonesa;cc salsa
+1;Mayonesa;cc salsa
+3;tomate;cc ketchup
+6;Mostaza;cc mos

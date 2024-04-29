@@ -1,0 +1,4 @@
+1;1;nesa;aaaaa;mayo;nesa;mayonesa;11/11/1111 0:00:00;12345678;Z;12345678Z;nesa@mayo.es;False;31/12/9999 0:00:00;31/12/9999 0:00:00
+1;1;aaaaa;nesa;mayo;nesa;aaaaa;11/11/1111 0:00:00;11111;a;12345678Z;nesa@mayo.es;False;31/12/9999 0:00:00;31/12/9999 0:00:00
+1;1;aaaaa;nesa;mayo;nesa;aaaaa;11/11/1111 0:00:00;11111;a;12345678Z;nesa@mayo.es;False;31/12/9999 0:00:00;31/12/9999 0:00:00
+1;1;aaaaa;aaaaa;mayo;nesa;aaaaa;11/11/1111 0:00:00;11111;a;12345678Z;nesa@mayo.es;False;31/12/9999 0:00:00;31/12/9999 0:00:00
